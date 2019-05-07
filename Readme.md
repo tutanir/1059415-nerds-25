@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Tuta](https://up.htmlacademy.ru/htmlcss/25/user/1059415).
-* Наставник: [Дмитрий Железцов](https://htmlacademy.ru/profile/id983299).
+* Наставник: [Дмитрий sench Железцов](https://htmlacademy.ru/profile/id983299).
 
 ---
 

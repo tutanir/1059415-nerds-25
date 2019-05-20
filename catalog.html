@@ -21,15 +21,38 @@
     </header>
     <main class="container">
     	<h1 class="visually-hidden">Магазин готовых шаблонов</h1>
-    	  <section class="filters">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-        стоимость:<br/>
-        сетка:<br/>
-        особенности:<br/>
-        <!-- Здесь будет форма -->
-      </section>
-       
-        
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры товаров</h2>
+        <form class="filter" method="get" action="#">
+          <p class="filter-grid">Сетка:</p>
+          <ul>
+            <li class="filter-option"><input class="visually-hider filter-input-radio" name="produkt-group" type="radio" value="adaptive" id="filter-adaptive"><label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option"><input class="visually-hider filter-input-radio" name="produkt-group" type="radio" value="fixed" id="filter-fixed"><label for="filter-fixed">Фиксированная</label></li>
+            <li class="filter-option"><input class="visually-hider filter-input-radio" name="produkt-group" type="radio" value="rubber" id="filter-rubber"><label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+          <p class="filter-features">Особенности:</p>
+          <ul>
+            <li class="filter-option"><input type="checkbox" name="slider" id="filter-slider">
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li class="filter-option"><input type="checkbox" name="advantades" id="filter-advantages">
+              <label for="filter-advantages">Блок преимуществ</label>
+            </li>
+            <li class="filter-option"><input type="checkbox" name="news" id="filter-news">
+              <label for="filter-news">Новости</label>
+            </li>
+            <li class="filter-option"><input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li class="filter-option"><input type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+             </ul>
+             <button type="submit" class="button-submit">Показать</button>
+        </form>
+        </section>
         <div class="blok-sorting">
         	<h2>Каталог</h2>
         	<b>сортировать:</b>

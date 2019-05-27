@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link  href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet" rel="stylesheet">
+    <link  href="css/normalize.css" rel="stylesheet">
+    <link  href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
 <header class="main-header">
       <nav class="main-navigation">
       	 <a class="main-header-logo">
-      	        <img src="img/nerds-logo.png" width="100" height="50" alt="Логотип магазина">
+      	        <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип магазина">
       	    </a>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
@@ -19,9 +22,8 @@
           <li><a href="#">Корзина</a></li>
         </ul>
       </nav> 
-    </header>
-    <main class="container">
-    	<h1 class="visually-hidden">Магазин готовых шаблонов</h1>
+    
+    <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
     	   <section class="features">
     	   	 <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
@@ -34,27 +36,29 @@
            </li>
        </ul>
             <p>Математически выверенный дизайн для вашего сайта или приложения</p>
-            <a class="button" href="#">Узнать больше</a>
+            <a class="button-feature" href="#">Узнать больше</a>
       </section>
+      </header>
+      <main class="container">
       <section class="scroll">
-      	<ul>
-      		<li class="scroll-item"><a class="illustration"><img src="img/illustration-1.png" width="150" height="100" alt="иллюстрация Веб-сайты"></a>
+      	<ul class="scroll-list">
+      		<li class="scroll-item"><a class="illustration"><img src="img/illustration-1.png" width="300" height="146" alt="иллюстрация Веб-сайты"></a>
             <h4>Веб-сайты</h4>
       			<p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
       			 <a class="button button-red" href="#">Заказать</a>
             </li>
-      		<li class="scroll-item"><a class="illustration"><img src="img/illustration-2.png" width="150" height="100" alt="иллюстрация Приложения"></a>
+      		<li class="scroll-item"><a class="illustration"><img src="img/illustration-2.png" width="300" height="146" alt="иллюстрация Приложения"></a>
             <h4>Приложения</h4>
       			<p>Покорим топ-10 приложений в AppStore и Google Play</p>
       			<a class="button button-green" href="#">Заказать</a>
           </li>
-      		<li class="scroll-item"><a class="illustration"><img src="img/illustration-3.png" width="150" height="100" alt="иллюстрация Презентации"></a>
+      		<li class="scroll-item"><a class="illustration"><img src="img/illustration-3.png" width="300" height="146" alt="иллюстрация Презентации"></a>
             <h4>Презентации</h4>
       			<p>Вы даже не подозреваете , насколько вы изумительны!</p>
       			<a class="button button-yellow" href="#">Заказать</a>
           </li>
       	</ul>
-      	
+      	<hr class="big-divider">
       </section>
       <section class="description">
         <h3>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h3>
@@ -66,7 +70,7 @@
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
          <a class="main-header-logo">
-                <img src="img/nerds-illustration.png" width="150" height="100" alt="Логотип магазина">
+                <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип магазина">
             </a>
             <h4>С 2004 года любим точность во всем:</h4>
             <table class="number">
@@ -82,28 +86,32 @@
     </tr>
   </table>
 </section>
+<hr class="big-divider">
       <section class="friends">
         <ul class="friends-logo">
-          <li><a href="https://htmlacademy.ru/intensive/htmlcss" class="friends-logo-item" target="_blank"> <img src="img/htmlacademy-logo.jpg" width="100" height="50" alt="Логотип html академии"></a>
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss" class="friends-logo-item" target="_blank"> <img src="img/htmlacdemy-logo-new.png" width="199" height="68" alt="Логотип html академии"></a>
           </li>
           <li><a class="friends-logo-item">
-                <img src="img/borodinski-logo.jpg" width="100" height="50" alt="Логотип барбешопа бородинский">
-            </a></li>
+                <img src="img/borodinsli-logo-new.png" width="209" height="90" alt="Логотип барбешопа бородинский">
+            </a>
+          </li>
           <li><a class="friends-logo-item">
-                <img src="img/pink-logo.jpg" width="100" height="50" alt="Логотип очки пинк">
-            </a></li>
+                <img src="img/pink-logo-new.png" width="185" height="52" alt="Логотип очки пинк">
+            </a>
+          </li>
           <li><a class="friends-logo-item">
-                <img src="img/mishka-logo.jpg" width="100" height="50" alt="Логотип мишка">
+                <img src="img/mishka-logo-new.png" width="173" height="84" alt="Логотип мишка">
             </a>
           </li>
           
         </ul>
       </section>
-    </main>
+      <hr class="big-divider">
+    
     <footer>
       <h3 class="visually-hidden">подвал сайта</h3>
        <section class="modal modal-map">
-      <span class="modal-close"><img src="img/2.png" width="780" height="300" alt="Офис компании по адресу 191186,Санкт-Петербург,
+      <span class="modal-close"><img src="img/2.png" width="1440" height="416" alt="Офис компании по адресу 191186,Санкт-Петербург,
 ул.Б.Конюшенная,д.19/8"></span>
     </section>
     
@@ -114,6 +122,7 @@
         Телефон: +7 (812) 275-75-75<br/>
 <a class="button" href="#">Напишите нам</a>
       </section>
+      </main>
        <div class="footer-social">
         <a class="social-button" href="#">Вконтакте</a>
         <a class="social-button" href="#">Фейсбук</a>

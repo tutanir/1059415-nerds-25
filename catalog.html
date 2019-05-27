@@ -3,17 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Catalog</title>
+    <link  href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet" rel="stylesheet">
+    <link  href="css/normalize.css" rel="stylesheet">
+    <link  href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
       <nav class="main-navigation">
       	 <a class="main-header-logo"  href="index.html">
-      	        <img src="img/nerds-logo.png" width="100" height="50" alt="Логотип магазина">
+      	        <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип магазина">
       	    </a>
         <ul class="site-navigation">
           <li><a href="index.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li class="active-page"><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
@@ -25,32 +28,33 @@
         <h2 class="visually-hidden">Фильтры товаров</h2>
         <form class="filter" method="get" action="#">
           <p class="filter-grid">Сетка:</p>
-          <ul>
-            <li class="filter-option"><input class="visually-hider filter-input-radio" name="produkt-group" type="radio" value="adaptive" id="filter-adaptive"><label for="filter-adaptive">Адаптивная</label>
+          <ul class="filter-list">
+            <li class="filter-option"><input class="visually-hider filter-input-radio" name="produkt-group" type="radio" value="adaptive" id="filter-adaptive" disabled><label for="filter-adaptive">Адаптивная</label>
             </li>
-            <li class="filter-option"><input class="visually-hider filter-input-radio" name="produkt-group" type="radio" value="fixed" id="filter-fixed"><label for="filter-fixed">Фиксированная</label></li>
-            <li class="filter-option"><input class="visually-hider filter-input-radio" name="produkt-group" type="radio" value="rubber" id="filter-rubber"><label for="filter-rubber">Резиновая</label>
+            <li class="filter-option"><input class="visually-hider filter-input-radio" name="produkt-group" type="radio" value="fixed" id="filter-fixed" disabled><label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option"><input class="visually-hider filter-input-radio" name="produkt-group" type="radio" value="rubber" id="filter-rubber" disabled><label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
           <p class="filter-features">Особенности:</p>
-          <ul>
+          <ul class="features-list">
             <li class="filter-option"><input type="checkbox" name="slider" id="filter-slider">
               <label for="filter-slider">Слайдер</label>
             </li>
-            <li class="filter-option"><input type="checkbox" name="advantades" id="filter-advantages">
+            <li class="filter-option"><input type="checkbox" name="advantades" id="filter-advantages" disabled>
               <label for="filter-advantages">Блок преимуществ</label>
             </li>
-            <li class="filter-option"><input type="checkbox" name="news" id="filter-news">
+            <li class="filter-option"><input type="checkbox" name="news" id="filter-news" disabled>
               <label for="filter-news">Новости</label>
             </li>
-            <li class="filter-option"><input type="checkbox" name="gallery" id="filter-gallery">
+            <li class="filter-option"><input type="checkbox" name="gallery" id="filter-gallery" disabled>
               <label for="filter-gallery">Галерея</label>
             </li>
-            <li class="filter-option"><input type="checkbox" name="basket" id="filter-basket">
+            <li class="filter-option"><input type="checkbox" name="basket" id="filter-basket" disabled>
               <label for="filter-basket">Корзина</label>
             </li>
              </ul>
-             <button type="submit" class="button-submit">Показать</button>
+             <button  class="button-submit" type="submit">Показать</button>
         </form>
         </section>
         <div class="blok-sorting">
@@ -115,10 +119,10 @@
         	</li>
           </ul>
         <ul class="pagination-list">
-          <li class="pagination-item"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">следующая</a></li>
+          <li class="pagination-item-1"><a>1</a></li>
+          <li class="pagination-item-2"><a href="#">2</a></li>
+          <li class="pagination-item-3"><a href="#">3</a></li>
+          <li class="pagination-item -next"><a href="#">следующая</a></li>
         </ul>
       </section>
       

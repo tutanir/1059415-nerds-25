@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: Roboto Regular, Arial, sans-serif;
+	font-family: "Roboto Regular", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 700;
@@ -75,9 +75,7 @@ a {
 }
 
 .scoroll-item h4 {
-	size: 24px;
 	line-height: 30px;
-	align:left;
 }
 
 .scroll-item .button {
@@ -120,10 +118,10 @@ a {
 	background-color: #e5a722; 
 }
 
-.presentetion {
+.presentation {
 	list-style: none;
 }
-.presentetion li:before {
+.presentation li:before {
     content:  "—";
     position: relative;
     left:     -5px;
@@ -148,17 +146,17 @@ a {
   width: 1160px;
   height: 2px;
 }
-.letter-iten input {
+.letter-item input {
 	font: inherit;
 
 	background-color: transparent;
 	border: 2px solid #d7dcde;
 }
 
-.letter-iten input:hover {
+.letter-item input:hover {
 	border: solid 2px #b4b9bb;
 }
-.letter-iten input:focus {
+.letter-item input:focus {
 	border: solid 2px #000000;
 	}
 

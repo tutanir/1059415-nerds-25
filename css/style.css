@@ -4,16 +4,36 @@ body {
 
 	font-family: "Roboto Regular", "Arial", sans-serif;
 	font-size: 16px;
-	line-height: 30px;
-	font-weight: 700;
+	line-height: 24px;
+	font-weight: 400;
 	color: #000000;
+	 text-transform: uppercase;
 
 	background-color: #ffffff;
 }
 
-header {
+.main-header {
 	 background-color: #eeeeee;
+	 margin: 0;
+	 min-height: 545px;
+	 padding: 50px 0 0;
 }
+
+.main-header-catalog {
+  min-height: 355px;
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 50px 0 0;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	max-width: 1160px;
+	min-height: 100px;
+}
+
 
 a {
 	text-decoration: none;
@@ -22,25 +42,65 @@ a {
 .main-navigation {
 	font-weight: 500px;
 }
+.main-navigation .main-header-logo {
+	position: absolute;
+}
+
+.main-navigation .wrapper {
+	display: flex;
+	padding-top: 28px;
+	margin-left: 362px;
+	text-transform: uppercase;
+}
 
 .site-navigation {
+	display: flex;
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
 }
 
+.site-navigation li {
+	margin-right: 46px;
+}
+
 .site-navigation a {
+	color: #000000;
+}
+
+.basket {
 	color: #000000;
 }
 
 .site-navigation a:hover {
  color: #fb565a;
  }
- .site-navigation a:active {
+
+ .basket:hover {
+ 	color: #fb565a;
+ }
+
+.site-navigation a:focus {
  	color: #b3b3b3;
 }
 
+.basket:focus {
+	color: #b3b3b3;
+}
+
+.basket:activ,.site-navigation a:activ {
+	border-bottom:2px solid #fb565a;
+	padding-bottom:8px;
+}
+
+
+.basket {
+	display: flex;
+	margin: 0 0 0 auto;
+	padding: 0;
+
+}
 
 .features-list {
 	margin: 0;
@@ -79,16 +139,37 @@ a {
 }
 
 .scroll-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 80px 0;
+
 	list-style: none;
+	border-bottom: 2px solid #eeeeee;
 }
 
-.scoroll-item h4 {
+.scoroll-item:last-child {
+	margin-right: 60px;
+}
+
+.scoroll-list h4 {
+	padding: 0;
+	margin: 19px 0 0;
+	font-size: 24px;
 	line-height: 30px;
+	font-weight: 700px;
+	text-transform: uppercase;
+}
+
+.scroll p {
+	width:275px;
+	margin-bottom:33px;
 }
 
 .scroll-item .button {
 	 width: 160px;
-  height: 50px;
+	 padding: 15px 0;
+	  height: 50px;
 	color: #ffffff;
 }
 
@@ -100,7 +181,8 @@ a {
 .button-red:hover {
 	background: #e74246;
 	}
-.button-red:active {
+
+.button-red:focus {
 	background-color:  #d7373b; 
 }
 
@@ -111,7 +193,8 @@ a {
 .button-green:hover {
 	background: #00bc6c;
 }
-.button-green:active {
+
+.button-green:focus {
 	background-color: #00aa62;
 }
 
@@ -122,18 +205,11 @@ a {
 .button-yellow:hover  {
 	background:#eab534; 
 }
-.button-yellow:active {
+
+.button-yellow:focus {
 	background-color: #e5a722; 
 }
 
-.presentation {
-	list-style: none;
-}
-.presentation li:before {
-    content:  "—";
-    position: relative;
-    left:     -5px;
-}
 
 .friends-logo {
 	list-style: none;
@@ -304,10 +380,9 @@ input[type="checkbox"]:disabled {
 
 .site-navigation {
 	display: flex;
-	justify-content: space-between;
-	width: 1100px;
 	margin: 0;
 	padding: 0;
+
 }
 
 .scroll {

@@ -24,6 +24,9 @@ a {
 }
 
 .site-navigation {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -40,8 +43,13 @@ a {
 
 
 .features-list {
-  width: 1440px;
-  height: 150px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+  width: 376px;
+  margin-bottom: 50px;
 }
 
 .button {
@@ -169,10 +177,15 @@ button[type=submit] {
 
 	.filter-list {
 		list-style: none;
+		padding: 0;
+		margin: 0;
+
+ 
+  margin-bottom: 55px;
+  
+
 	}
-	.features-list {
-		list-style: none;
-	}
+
 
 .button-submit[type=submit] {
 	background-color: #eeeeee;
@@ -182,6 +195,13 @@ color: #000000;
   height: 50px;
   }
 
+.button-submit-grey[type=submit] {
+ width: 260px;
+  height: 50px;
+  background-color: #eeeeee;
+  color: #000000;
+}
+}
    .button-submit[type=submit]:hover {
   	 width: 260px;
   height: 50px;
@@ -240,11 +260,10 @@ color: #000000;
 
  .list {
  	list-style: none;
+ 	 color: #b3b3b3;
 }
 
-.list {
-  color: #b3b3b3;
-}
+
 .list:hover {
 	color: #666666;
 }
@@ -261,8 +280,149 @@ input[type="checkbox"]:disabled {
 	opacity: 0.4;
 	background-color: #4d4d4d;
 	}
+	/*сетка*/
 
+	.main-header {
+		margin-bottom: 80px;
+	}
 
+	.main-header-catalog {
+		margin-bottom: 60px;
+	}
+.main-navigation {
+	display: flex;
+}
 
+.main-header-logo {
+	margin-left: auto;
+}
+	
+.main-navigation-wrapper {
+	width: 100%;
+	margin-bottom: 60px;
+}
 
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 1100px;
+	margin: 0;
+	padding: 0;
+}
+
+.scroll {
+	margin-bottom: 80px;
+	margin-top: 80px;
+}
+
+.scroll-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 140px 80px;
+}
+
+.scroll-item {
+	width: 300px;
+}
+
+.friends-logo {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 140px 80px;
+	margin-bottom: 80px;
+}
+
+.main-footer {
+	margin-top: 80px;
+	padding: 80px 0;
+}
+
+.footer-contacts {
+	margin: 0;
+}
+
+.main-footer .container {
+	display: flex;
+	width: 1440px;
+
+}
+
+.footer-social {
+	width: 270px;
+}
+
+.footer-discount {
+	width: 545px;
+	margin-right: 539px;
+}
+.friend-logo-item {
+	width: 200px;
+}
+
+.container-map {
+	position: relative;
+
+}
+
+.address {
+	position: absolute;
+
+}
+
+.map .footer-contacts {
+	width:297px;
+	padding:32px 10px 46px;
+	background-color:#ffffff;
+}
+ .button-footer {
+	 width: 219px;
+  height: 50px;
+  color: #ffffff;
+  background-color: #fb565a;
+	margin-left:40px;
+	margin-top:35px;
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+	padding: 140px 80px;
+	margin-bottom: 80px;
+
+}
+
+.description-table {
+width: 650px;
+}
+
+.description-logo {
+width: 360px;
+}
+
+.catalog-columns {
+	  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-list {
+	  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+
+  list-style: none;
+}
+
+.catalog-item {
+	 width: 360px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  
+}
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
 

@@ -11,16 +11,22 @@
   <body>
 <header class="main-header">
       <nav class="main-navigation">
-      	 <a class="main-header-logo">
+      	
+          <a class="main-header-logo">
       	        <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип магазина">
       	    </a>
+          <div class="main-navigation-wrapper">
+           
         <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li class="site-navigation-item"><a href="#">Студия</a></li>
+          <li class="site-navigation-item"><a href="#">Клиенты</a></li>
+          <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-item"><a href="#">Контакты</a></li>
+          <li class="site-navigation-item"><a href="#">Корзина</a></li>
         </ul>
+      
+      </div>
+      
       </nav> 
     
     <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
@@ -61,7 +67,7 @@
       	<hr class="big-divider">
       </section>
       <section class="description">
-        <h3>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h3>
+       <div class="description-table"> <h3>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h3>
         <p>Исповедуем принципы минимализма и чистоты.Ставим матеметический расчет превыше креатива.Работаем не покладая рук,как роботы</p>
         <h4>Выполняем заказы на разработку:</h4>
         <ul class="presentation">
@@ -69,7 +75,8 @@
           <li>Мобильных приложений для iOS и Android</li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-         <a class="main-header-logo">
+      </div>
+         <div class="description-logo"><a class="main-header-logo">
                 <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип магазина">
             </a>
             <h4>С 2004 года любим точность во всем:</h4>
@@ -85,21 +92,22 @@
       <td>минимальная<br/> предоплата</td>
     </tr>
   </table>
+</div>
 </section>
 <hr class="big-divider">
       <section class="friends">
         <ul class="friends-logo">
-          <li><a href="https://htmlacademy.ru/intensive/htmlcss" class="friends-logo-item" target="_blank"> <img src="img/htmlacdemy-logo-new.png" width="199" height="68" alt="Логотип html академии"></a>
+          <li class="friend-logo-item "><a href="https://htmlacademy.ru/intensive/htmlcss" class="friends-logo-item" target="_blank"> <img src="img/htmlacdemy-logo-new.png" width="199" height="68" alt="Логотип html академии"></a>
           </li>
-          <li><a class="friends-logo-item">
+          <li class="friend-logo-item"><a class="friends-logo-item">
                 <img src="img/borodinsli-logo-new.png" width="209" height="90" alt="Логотип барбешопа бородинский">
             </a>
           </li>
-          <li><a class="friends-logo-item">
+          <li class="friend-logo-item"><a class="friends-logo-item">
                 <img src="img/pink-logo-new.png" width="185" height="52" alt="Логотип очки пинк">
             </a>
           </li>
-          <li><a class="friends-logo-item">
+          <li class="friend-logo-item"><a class="friends-logo-item">
                 <img src="img/mishka-logo-new.png" width="173" height="84" alt="Логотип мишка">
             </a>
           </li>
@@ -108,42 +116,53 @@
       </section>
       <hr class="big-divider">
     </main>
-    <footer>
+
+    <footer class="main-footer">
+      
       <h3 class="visually-hidden">подвал сайта</h3>
-       <section class="modal modal-map">
-      <span class="modal-close"><img src="img/2.png" width="1440" height="416" alt="Офис компании по адресу 191186,Санкт-Петербург,
-ул.Б.Конюшенная,д.19/8"></span>
-    </section>
-    
-     <section class="footer-contacts">
+     <div class="container-map"> 
+      <section class="map">
+        <h4 class="visually-hidden">Карта</h4>
+      <img src="img/2.png" width="1440" height="416" alt="Офис компании по адресу 191186,Санкт-Петербург,
+ул.Б.Конюшенная,д.19/8">
+</section>
+
+<div class="address">
+<section class="footer-contacts">
         <h4>nerds design studio </h4>
         191186,Санкт-Петербург,<br/>
         ул.Б.Конюшенная,д.19/8<br/>
         Телефон: +7 (812) 275-75-75<br/>
-<a class="button" href="#">Напишите нам</a>
-      </section>
-     
+<a class="button-footer" href="#">Напишите нам</a>
+</section>
+    
+      </div>
+    </div>
+<div class="container">
        <div class="footer-social">
         <a class="social-button" href="#">Вконтакте</a>
         <a class="social-button" href="#">Фейсбук</a>
         <a class="social-button" href="#">Инстаграм</a>
+       </div>
+       <div class="footer-discount ">
          <b>Давайте дружить,это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей</p>
       </div>
-       
+      
+     </div>
     </footer>
     <section class="letter">
       <h2>Напишите нам</h2>
       <form class="letter-info" action="#" method="post">
-        <p class="letter-iten">
+        <p class="letter-item">
           <label for="letter-name">Ваше имя:</label>
           <input id="letter-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
-        <p class="letter-iten">
+        <p class="letter-item">
           <label for="letter-email">Ваш e-mail:</label>
           <input id="letter-email" type="text" name="email" placeholder="email@mail.ru">
         </p>
-        <p class="letter-iten">
+        <p class="letter-item">
           <label for="letter-letter">Текст письма:</label>
           <input id="letter-letter" type="text" name="letter" placeholder="В свободной форме">
           </p>

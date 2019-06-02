@@ -39,9 +39,6 @@ a {
 	text-decoration: none;
 }
 
-.main-navigation {
-	font-weight: 500px;
-}
 .main-navigation .main-header-logo {
 	position: absolute;
 }
@@ -89,7 +86,7 @@ a {
 	color: #b3b3b3;
 }
 
-.basket:activ,.site-navigation a:activ {
+.basket:active,.site-navigation a:active {
 	border-bottom:2px solid #fb565a;
 	padding-bottom:8px;
 }
@@ -293,7 +290,6 @@ color: #000000;
 .pagination-list {
 	list-style: none;
   width: 280px;
-  margin: 30px auto;
   padding: 10px;
 
   white-space: nowrap;
@@ -502,3 +498,7 @@ width: 360px;
   margin-right: 0;
 }
 
+.about-us .container {
+	display: flex;
+	
+}

@@ -255,13 +255,8 @@ button[type=submit] {
 		list-style: none;
 		padding: 0;
 		margin: 0;
-
- 
   margin-bottom: 55px;
-  
-
-	}
-
+  }
 
 .button-submit[type=submit] {
 	background-color: #eeeeee;
@@ -277,7 +272,7 @@ color: #000000;
   background-color: #eeeeee;
   color: #000000;
 }
-}
+
    .button-submit[type=submit]:hover {
   	 width: 260px;
   height: 50px;
@@ -443,6 +438,12 @@ input[type="checkbox"]:disabled {
 
 .address {
 	position: absolute;
+	top: 100px;
+	left: 140px;
+	width: 319px;
+  height: 308px;
+  margin: auto;
+	background-color: #ffffff;
 
 }
 

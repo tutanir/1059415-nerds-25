@@ -17,6 +17,7 @@ body {
 	 margin: 0;
 	 min-height: 545px;
 	 padding: 50px 0 0;
+	 width: 1440px;
 }
 
 .main-header-catalog {
@@ -34,9 +35,21 @@ body {
 	min-height: 100px;
 }
 
-
 a {
 	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
 }
 
 .main-navigation .main-header-logo {
@@ -50,47 +63,51 @@ a {
 	text-transform: uppercase;
 }
 
-.site-navigation {
+.site-navigation,
+.user-navigation {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
+	background-color: #eeeeee;
 }
 
-.site-navigation li {
-	margin-right: 46px;
+.site-navigation {
+	width: 885px;
+	
+
+}
+.user-navigation {
+	max-width: 240px;
+	
 }
 
-.site-navigation a {
+.site-navigation a,
+ .user-navigation a {
+ 	display: block;
+ 	padding: 25px 20px;
+
+ 	vertical-align: middle;
 	color: #000000;
 }
 
-.basket {
-	color: #000000;
-}
-
-.site-navigation a:hover {
+.site-navigation a:hover,
+.user-navigation a:hover {
  color: #fb565a;
  }
 
- .basket:hover {
- 	color: #fb565a;
- }
-
-.site-navigation a:focus {
+.site-navigation a:focus,
+.user-navigation a:focus {
  	color: #b3b3b3;
 }
 
-.basket:focus {
-	color: #b3b3b3;
-}
-
-.basket:active,.site-navigation a:active {
+.site-navigation a:active,
+.user-navigation a:active {
 	border-bottom:2px solid #fb565a;
 	padding-bottom:8px;
 }
-
 
 .basket {
 	display: flex;
@@ -440,6 +457,7 @@ input[type="checkbox"]:disabled {
   height: 308px;
   margin: auto;
 	background-color: #ffffff;
+	margin-bottom: 54opx;
 
 }
 
@@ -453,9 +471,40 @@ input[type="checkbox"]:disabled {
   height: 50px;
   color: #ffffff;
   background-color: #fb565a;
-	margin-left:40px;
-	margin-top:35px;
+margin-bottom: 47px;
+margin-left: 50px;
 }
+.footer-contacts h4 {
+  width: 192px;
+  height: 17px;
+  font-family: Roboto;
+  font-size: 18px;
+   font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+ padding-left: 50px;
+ padding-top: 15px;
+  text-align: left;
+  color: #000000;
+}
+.footer-address {
+	  width: 200px;
+  height: 71px;
+  font-family: Roboto;
+  font-size: 16px;
+   font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+padding-left: 51px;
+padding-top: 50px;
+  text-align: left;
+  color: #666666;
+}
+
 
 .description {
 	display: flex;

@@ -11,7 +11,6 @@
     <header class="main-header-catalog">
       <div class="container">
       <nav class="main-navigation">
-        
          <a class="main-header-logo"  href="index.html">
                 <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип магазина">
             </a>
@@ -21,16 +20,65 @@
           <li><a href="#">Клиенты</a></li>
           <li class="active-page"><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
+           </ul>
+           <ul class="user-navigation">
+            <li class="bascet"><a href="#">Корзина</a></li>
+          </ul>
       </div>
       </nav> 
-        <h1 class="">Магазин готовых шаблонов</h1>
+        <h1 class="headline-navigation">Магазин готовых шаблонов</h1>
   </div>
     </header>
+  
      <main class="container">
+<!-- <form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-item">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 20%; width: 30%"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div>
+      </fieldset>
+       </form>-->
+        <div class="blok-sorting">
+          <h2 class="visually-hidden">Каталог</h2>
+          <b>сортировать:</b>
+          <ul class="list">
+            <li>по цене</li>
+            <li>по типу</li>
+            <li>по названию</li>
+          </ul>
+          </div>
+       <form method="get" action="https://echo.htmlacademy.ru">
+      <fieldset class="filter-item">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar" style="margin-left: 20%; width: 30%"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div>
+      </fieldset>
+      
+    </form>
       <div class="catalog-columns">
-      <section class="filters">
+          <section class="filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
         <form class="filter" method="get" action="#">
           <p class="filter-grid">Сетка:</p>
@@ -61,66 +109,58 @@
             </li>
              </ul>
              <button  class="button-submit-grey" type="submit">Показать</button>
-        </form>
-        </section>
-      
-          <div class="blok-sorting">
-          <h2>Каталог</h2>
-          <b>сортировать:</b>
-          <ul class="list">
-            <li>по цене</li>
-            <li>по типу</li>
-            <li>по названию</li>
-          </ul>
-          </div>
+           </form>
+         </section>
+
+       
            <section class="catalog">
              <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <p>Настоящий городок</p>
+            <p class="visually-hidden">Настоящий городок</p>
             <p class="catalog-item-image">
               <a href="#">
-                <img src="#" width="220" height="165" alt="Седона-городок в Аризоне">
+                <img src="img/img-sedona-jpg.png" width="220" height="165" alt="Седона-городок в Аризоне">
                  </a>
           </p>
       </li>
           <li class="catalog-item">
-            <p>Устали от серости мегаполиса?</p>
+            <p class="visually-hidden">Устали от серости мегаполиса?</p>
             <p class="catalog-item-image">
               <a href="#">
-                <img src="#" width="220" height="165" alt="Pink">
+                <img src="img/img-pink.jpg" width="220" height="165" alt="Pink">
                  </a>
                  </p>
       </li>
           <li class="catalog-item">
-            <p>Стрижка у нас это выгодно!</p>
+            <p class="visually-hidden">Стрижка у нас это выгодно!</p>
             <p class="catalog-item-image">
               <a href="#">
-                <img src="#" width="220" height="165" alt="Бородинский">
+                <img src="img/img-barbershop-jpg.png" width="220" height="165" alt="Бородинский">
                  </a>
           </p>
           </li>
           <li class="catalog-item">
-            <p>Милые штуки ручной работы для дома</p>
+            <p class="visually-hidden">Милые штуки ручной работы для дома</p>
             <p class="catalog-item-image">
               <a href="#">
-                <img src="#" width="220" height="165" alt="Mishka">
+                <img src="img/img-mishka-jpg.png" width="220" height="165" alt="Mishka">
                  </a>
           </p>
           </li>
           <li class="catalog-item">
-            <p>Учеба еще никогда не была такой интересной!</p>
+            <p class="visually-hidden">Учеба еще никогда не была такой интересной!</p>
             <p class="catalog-item-image">
               <a href="#">
-                <img src="#" width="220" height="165" alt="Шаг">
+                <img src="img/img-aplus-jpg.png" width="220" height="165" alt="Шаг">
                  </a>
           </p>
           </li>
           <li class="catalog-item">
-            <p>Крафтовый квас всему голова!</p>
+            <p class="visually-hidden">Крафтовый квас всему голова!</p>
             <p class="catalog-item-image">
               <a href="#">
-                <img src="#" width="220" height="165" alt="Кваст">
+                <img src="img/img-kvast-jpg.png" width="220" height="165" alt="Кваст">
                  </a>
           </p>
           </li>
@@ -145,8 +185,7 @@
 ул.Б.Конюшенная,д.19/8"></span>
     </section>
     <div class="address">
-    
-     <section class="footer-contacts">
+   <section class="footer-contacts">
         <h4>nerds design studio </h4>
         191186,Санкт-Петербург,<br/>
         ул.Б.Конюшенная,д.19/8<br/>

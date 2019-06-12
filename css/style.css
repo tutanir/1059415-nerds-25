@@ -76,6 +76,7 @@ img {
 .user-navigation {
 	list-style: none;
 	display: flex;
+	margin-right: 60px;
 
 	max-width: 240px;
 
@@ -107,7 +108,8 @@ img {
 	}
 
 .main-header-logo {
-	margin-left: auto;
+	margin-top: 30px;
+	margin-left: 40px;
 }
 
 .main-header-logo:hover {
@@ -128,24 +130,21 @@ img {
 	display: flex;
 	margin: 0;
 	padding: 0;
-
+    font-size: 14px;
 }
 
+.icon-navigation {
+	margin-top: 18px;
+}
+
+.bascet {
+	margin-top: -12px;
+	font-size: 14px;
+}
 .active-page {
-  	text-decoration: underline;
+  	border-bottom: 2px solid #fb565a;
   }
 	
-
-//*
-}
-.site-navigation a:active,
-.user-navigation a:active {
-	border-bottom:2px solid #fb565a;
-	padding-bottom:8px;
-}
-*//
-
-
 
 .slider {
   position: relative;
@@ -437,14 +436,14 @@ img {
 	border: solid 2px #000000;
 	}
 
-button[type=submit] {
+.button[type=submit] {
 	width: 260px;
   height: 50px;
   background-color: #fb565a;
 	color: #ffffff;
 	}
 
-	.filter-list {
+.filter-list {
 		list-style: none;
 		padding: 0;
 		margin: 0;
@@ -466,7 +465,7 @@ color: #000000;
   color: #000000;
 }
 
-   .button-submit[type=submit]:hover {
+  .button-submit[type=submit]:hover {
   	 width: 260px;
   height: 50px;
   background-color: #dfdfdf;
@@ -516,20 +515,6 @@ color: #000000;
   	background-color: #ffffff;
   }
 
-
- .list {
- 	list-style: none;
- 	 color: #b3b3b3;
-}
-
-
-.list:hover {
-	color: #666666;
-}
-.list:active {
-	color: #000000;
-}
-
 input[type="radio"]:disabled {
 	opacity: 0.4;
 	background-color: #4d4d4d;
@@ -564,104 +549,47 @@ input[type="checkbox"]:disabled {
 	margin-bottom: 80px;
 }
 
-.main-footer {
-	margin-top: 80px;
-	padding: 80px 0;
-}
-
-.footer-contacts {
-	margin: 0;
-}
-
-.main-footer .container {
-	display: flex;
-	width: 1440px;
-}
-
-.footer-social {
-display: flex;
-margin-top: 69px;
-}
-
-.footer-friends {
-	padding-left: 139px;
-	padding-bottom: 76px;
-	padding-right: 356px;
-}
-
-.footer-controls {
-	padding-left: 140px;
-
-}
-
-.footer-discount {
-	width: 545px;
-	margin-right: 539px;
-}
-.friend-logo-item {
-	width: 200px;
-}
-
-.container-map {
-	position: relative;
-
-}
-
-.address {
-	position: absolute;
-	top: 75px;
-	left: -50px;
-	background-color: #ffffff;
-	width: 319px;
-	margin-left: 140px;
-	}
-
-
-.map .footer-contacts {
-	width:297px;
-	padding:32px 10px 46px;
-	background-color:#ffffff;
-}
- .button-footer {
-	 width: 219px;
-  height: 50px;
-  color: #ffffff;
-  background-color: #fb565a;
-margin-bottom: 47px;
-margin-left: 50px;
-}
-.footer-contacts h4 {
-  width: 192px;
-  font-size: 18px;
-   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
- padding-left: 50px;
- padding-top: 15px;
-  text-align: left;
-  color: #000000;
-}
-.footer-address {
-	  width: 200px;
-  font-size: 16px;
-   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.13;
-  letter-spacing: normal;
-padding-left: 51px;
-padding-top: 50px;
-  text-align: left;
-  color: #666666;
-}
 .blok-sorting {
 	display: flex;
-	width: 900px;
-	
+	}
+
+.list {
+	display: flex;
+	margin-left: 230px;
+	margin-top: 15px;
+	margin-bottom: 40px;
+	list-style: none;
+ 	 color: #b3b3b3;
 }
 
+.list-item {
+	font-size: 11px;
+	padding-right: 27px;
+}
+
+.list-item-grey {
+	font-size: 11px;
+	padding-right: 27px;
+	opacity: 0.3
+}
+
+ .sort {
+ 	margin-top: 15px;
+ 	margin-left: 270px;
+ }
+.price {
+	margin-top: 15px;
+}
+
+.link {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filters {
+	margin-left: 20px;
+	margin-top: -33px;
+}
 .description {
 	display: flex;
 	justify-content: space-between;
@@ -818,50 +746,154 @@ width: 360px;
 	padding-left: 300px;
 }
 
-.footer-controls i {
+.main-footer {
+	margin-top: 80px;
+	padding: 80px 0;
+}
+
+.footer-contacts {
+	margin: 0;
+}
+
+.main-footer .container {
+	display: flex;
+	width: 1440px;
+}
+
+
+.footer-friends {
+	padding-left: 139px;
+	padding-bottom: 76px;
+	padding-right: 356px;
+}
+
+.footer-controls {
+	padding-left: 140px;
+
+}
+
+.friend-logo-item {
+	width: 200px;
+}
+
+.container-map {
 	position: relative;
-  display: inline-block;
-  width: 79px;
-  height: 79px;
-  border-radius: 50%;
-  cursor: pointer;
-  
-  background-color: #e1e1e1;
+
 }
 
-.footer-controls i:hover {
-	color: #e74246;
-}
-
-.footer-controls i:active {
-	color: #d7373b;
-}
-
-.social-button {
-	 content: "";
+.address {
 	position: absolute;
-	 top: 30px;
-  left: 195px;
-  
-}
-.social-button {
-	color: #ffffff;
-	 }
+	background-color: #ffffff;
+	width: 319px;
+	left: 80px;
+	top: 60px;
 
+	}
+
+
+.map .footer-contacts {
+	width:297px;
+	padding:32px 10px 46px;
+	background-color:#ffffff;
+}
+ .button-footer {
+	 width: 219px;
+  height: 50px;
+  color: #ffffff;
+  background-color: #fb565a;
+margin-bottom: 47px;
+margin-left: 50px;
+}
+
+.footer-contacts h4 {
+  width: 192px;
+  font-size: 18px;
+   font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+ padding-left: 50px;
+ padding-top: 15px;
+  text-align: left;
+  color: #000000;
+}
+
+.footer-address {
+	  width: 200px;
+  font-size: 16px;
+   font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+padding-left: 51px;
+padding-top: 50px;
+  text-align: left;
+  color: #666666;
+}
+
+.footer-social {
+display: flex;
+
+}
+
+.social-button {
+	margin-top: 69px;
+	margin-bottom: 69px;
+	margin-left: 12px;
+    width: 79px;
+    height: 79px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+
+    position: relative;
+}
 .social-button:hover {
-	color: #ffffff;
+	background-color: #e74246;
 }
 
 .social-button:active {
-	color: #d7373b; 
-	opacity: 0.3;
+	background-color:#d7373b; 
+
 }
+
+.icon:active {
+    opacity: 0.3;
+}
+
+.icon {
+ 	position: absolute;
+ 	top: 32px;
+ 	left: 30px;
+ }
+
+ .social-button::first-child {
+	margin-left: 140px;
+}
+.container-footer {
+	display: flex;
+}
+.footer-friends {
+	padding-top: 79px;
+	padding-left: 139px;
+	min-width: 545px;
+}
+
+.benefit {
+    font-size: 25px;
+}
+
+.benefit::{
+	font-size: 150%;
+}
+
 
 .catalog-item-image svg {
 	opacity: 0.12;
 }
 
-a .phone-style {
+.phone-style {
 	color: #000000;
 
 }

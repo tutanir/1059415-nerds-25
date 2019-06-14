@@ -83,13 +83,13 @@ img {
 	list-style: none;
 	background-color: #eeeeee;
 }
+
 .user-navigation {
 	list-style: none;
 	display: flex;
 	margin-right: 60px;
 
 	max-width: 240px;
-
 }
 
 .site-navigation a,
@@ -100,7 +100,6 @@ img {
  	vertical-align: middle;
 	color: #000000;
 }
-
 
 .site-navigation a:hover,
 .user-navigation a:hover {
@@ -156,8 +155,6 @@ img {
 	border-radius: 3px;
 	color: #ffffff;
 	background-color: #fb565a;
-	
-
 }
 
 .slider-controls {

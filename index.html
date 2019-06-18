@@ -10,33 +10,27 @@
 
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="wrapper">
+         <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип магазина">
+        </a>
         <nav class="main-navigation">
-      	  <a class="main-header-logo">
-      	     <img src="img/nerds-logo.png" width="108" height="35" alt="Логотип магазина">
-      	  </a>
-            <div class="wrapper">
-              <ul class="site-navigation">
-                <li><a href="#">Студия</a></li>
-                <li><a href="#">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-              <ul class="user-navigation">
-                <li><svg class="icon-navigation" xmlns="http://www.w3.org/2000/svg" width="15" height="15" 
+          <ul class="site-navigation">
+            <li class="studio"><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          </nav>
+          <svg class="icon-navigation" xmlns="http://www.w3.org/2000/svg" width="15" height="15" 
                    viewBox=" 0 0 15 15">
                   <circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/>
                   <circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/>
                    <path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                  </svg>
-                </li>
-                <li class="bascet"><a href="#">Корзина</a></li>
-              </ul>
-            </div>
-        </nav>
-      </div>
-    
-      <section class="slider">
+          </svg><a class="bascet" href="#">Корзина</a>
+         </div>
+    </header>
+    <main>
+       <section class="slider">
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
             <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -66,24 +60,22 @@
               </ul>  
         </div>
       </section>
-    </header>
-    <main>
       <section class="scroll">
         <div class="container">
       	  <ul class="scroll-list">
       		  <li class="scroll-item"><a class="illustration"><img src="img/illustration-1.png" width="300" height="146" alt="иллюстрация Веб-сайты"></a>
-              <h4>Веб-сайты</h4>
-      			  <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+              <h4 class="scroll-headline-1">Веб-сайты</h4>
+      			  <p class="scroll-info">Мир никогда не будет прежним после того как увидит ваш сайт</p>
       			  <a class="button button-red" href="#">Заказать</a>
             </li>
       		  <li class="scroll-item"><a class="illustration"><img src="img/illustration-2.png" width="300" height="146" alt="иллюстрация Приложения"></a>
-              <h4>Приложения</h4>
-      			  <p>Покорим топ-10 приложений в AppStore и Google Play</p>
+              <h4 class="scroll-headline-2">Приложения</h4>
+      			  <p class="scroll-info">Покорим топ-10 приложений в AppStore и Google Play</p>
       			  <a class="button button-green" href="#">Заказать</a>
             </li>
       		  <li class="scroll-item"><a class="illustration"><img src="img/illustration-3.png" width="300" height="146" alt="иллюстрация Презентации"></a>
-              <h4>Презентации</h4>
-      			  <p>Вы даже не подозреваете , насколько вы изумительны!</p>
+              <h4 class="scroll-headline-3">Презентации</h4>
+      			  <p class="scroll-info-1">Вы даже не подозреваете , насколько вы изумительны!</p>
       			  <a class="button button-yellow" href="#">Заказать</a>
             </li>
       	  </ul>
@@ -101,22 +93,19 @@
                 <li class="presentation-item">Слайдшоу и видео для корпоративных презентаций</li>
               </ul>
           </div>
-            <div class="table-logo"><a class="main-header-logo">
-                <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип магазина">
-                </a>
-            <p>С 2004 года любим точность во всем:</p>
-                <table class="number">
-                  <tr>
-                    <td>146%</td>
-                    <td>100%</td>
-                    <td>50%</td>
-                  </tr>
-                  <tr>
-                    <td>уровень самоотдачи</td>
-                    <td>соблюдение сроков</td>
-                    <td>минимальная  предоплата</td>
-                  </tr>
-                </table>
+          <div class="table">
+            <a>
+              <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип магазина">
+            </a>
+            <ul class="table-list">
+              <li class="table-list-item-1"> С 2004 года любим точность во всем:</li>
+              <li class="table-list-item">146%</li>
+              <li class="table-list-item">100%</li>
+              <li class="table-list-item">50%</li>
+              <li class="table-list-item">уровень самоотдачи</li>
+              <li class="table-list-item">соблюдение сроков</li>
+              <li class="table-list-item">минимальная  предоплата</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -155,7 +144,7 @@
                  <p class="address-phone">191186,Санкт-Петербург,<br/>
                     ул.Б.Конюшенная,д.19/8<br/>
                     Телефон:<a class="phone-style" href="tel:+7(812)275-75-75">+7(812) 275-75-75</a></p>
-                   <button class="button-footer" type="submit">Напишите нам</button>
+                   <button class="button-footer" type="button">Напишите нам</button>
              </div>
            </div>
          </div>
@@ -187,7 +176,7 @@
             <label for="letter-letter">Текст письма:</label>
               <input id="letter-letter" type="text" name="letter" placeholder="В свободной форме">
           </p>
-            <button class="button-letter" type="submit">Отправить</button>
+            <button class="button-letter" type="button">Отправить</button>
         </form>
     </section>
   </body>

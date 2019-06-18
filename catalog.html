@@ -8,36 +8,29 @@
     <link  href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header-catalog">
-      <div class="container">
+    <header class="main-header">
+      <div class="wrapper">
+        <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="Логотип магазина">
+        </a>
         <nav class="main-navigation">
-          <a class="main-header-logo"  href="index.html">
-            <img src="img/nerds-logo.png" width="108" height="35" alt="Логотип магазина">
-          </a>
-          <div class="wrapper">
-            <ul class="site-navigation">
-              <li><a href="index.html">Студия</a></li>
-              <li><a href="#">Клиенты</a></li>
-              <li class="active-page"><a href="catalog.html">Магазин</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-            <ul class="user-navigation">
-              <li><svg class="icon-navigation" xmlns="http://www.w3.org/2000/svg" width="15" height="15" 
+          <ul class="site-navigation">
+            <li class="studio"><a href="index.html">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li class="active-page"><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          </nav> 
+          <svg class="icon-navigation" xmlns="http://www.w3.org/2000/svg" width="15"      height="15" 
                    viewBox=" 0 0 15 15">
                   <circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/>
                   <circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/>
                    <path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-                  </svg>
-              </li>
-              <li class="bascet"><a href="#">Корзина</a></li>
-            </ul>
-          </div>
-        </nav> 
-        <h1 class="headline-navigation">Магазин готовых шаблонов</h1>
-      </div>
+          </svg><a class="bascet" href="#">Корзина</a>
+         </div>
     </header>
-  
     <main class="container">
+      <div class="headline-navigation"><h1>Магазин готовых шаблонов</h1>
+      </div>
       <div class="blok-sorting">
         <h2 class="visually-hidden">Каталог</h2>
         <p class="price">Стоимость:</p>
@@ -108,7 +101,7 @@
                <label for="filter-basket">Корзина</label>
                </li>
              </ul>
-             <button  class="button-submit-grey" type="submit">Показать</button>
+             <button  class="button-submit-grey" type="button">Показать</button>
 
             </form>
           </section>

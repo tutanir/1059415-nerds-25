@@ -16,11 +16,14 @@ body {
 	
 }
 
+.flex {
+	display: flex;
+}
+
 .wrapper {
 	width: 1160px;
 	margin: 0 auto;
 	padding: 45px 20px 0;
-	align-items: center;
 	position: relative;
 }
 
@@ -64,9 +67,8 @@ img {
     line-height: 1.88;
     letter-spacing: normal;
     text-align: left;
-	margin: 0;
-	padding: 0;
     list-style: none;
+    width: 600px;
 	background-color: #eeeeee;
     text-transform: uppercase;
 	}
@@ -103,14 +105,25 @@ img {
  	padding-top: 30px;
  	padding-left: 300px;
  	margin-top: 0;
-  font-family: Roboto;
-  font-size: 43px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
+    font-family: Roboto;
+    font-size: 43px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
  
+ }
+ .bascet {
+ 	color: #000000;
+ 	font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: right;
  }
 
  .bascet:hover {

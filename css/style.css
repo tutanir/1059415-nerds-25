@@ -18,6 +18,7 @@ body {
 
 .flex {
 	display: flex;
+	justify-content: space-between;
 }
 
 .wrapper {
@@ -59,6 +60,8 @@ img {
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
+	width: 400px;
+	justify-content: space-between;
 	font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -68,9 +71,8 @@ img {
     letter-spacing: normal;
     text-align: left;
     list-style: none;
-    width: 600px;
 	background-color: #eeeeee;
-    text-transform: uppercase;
+    text-transform: lowercase;
 	}
 	
 .site-navigation a {
@@ -97,7 +99,7 @@ img {
   }
 
 .headline-navigation {
-    height: 150px;
+    height: 123px;
   	background-color: #eeeeee;
  }
 
@@ -106,12 +108,14 @@ img {
  	padding-left: 300px;
  	margin-top: 0;
     font-family: Roboto;
-    font-size: 43px;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
-    line-height: 1;
+    line-height: 55px;
     letter-spacing: normal;
+    font-size: 55px;
+    line-height: 1;
+    text-align: center;
  
  }
  .bascet {
@@ -124,6 +128,8 @@ img {
     line-height: 1.88;
     letter-spacing: normal;
     text-align: right;
+    text-transform: lowercase;
+
  }
 
  .bascet:hover {
@@ -1028,10 +1034,6 @@ width: 171px;
 	width: 1440px;
 }
 
-.friends {
-	margin-left: 80px
-}
-
 .footer-friends {
 	padding-left: 139px;
 	padding-bottom: 76px;
@@ -1048,7 +1050,7 @@ width: 171px;
 }
 
 .map {
-	width: 1440px;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
 }

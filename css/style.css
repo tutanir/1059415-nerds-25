@@ -45,10 +45,6 @@ img {
      clip: rect(0 0 0 0);
 }
 
-.main-header-logo {
-	max-width: 160px;
-}
-
 .main-header-logo:hover {
 	opacity: 0.8;
 }
@@ -60,7 +56,7 @@ img {
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
-	width: 400px;
+	width: 440px;
 	justify-content: space-between;
 	font-family: Roboto;
     font-size: 16px;
@@ -72,7 +68,10 @@ img {
     text-align: left;
     list-style: none;
 	background-color: #eeeeee;
-    text-transform: lowercase;
+    text-transform: uppercase;
+    margin-left: -125px;
+    margin-top: 25px;
+
 	}
 	
 .site-navigation a {
@@ -99,14 +98,12 @@ img {
   }
 
 .headline-navigation {
-    height: 123px;
+    height: 220px;
   	background-color: #eeeeee;
  }
 
  .headline-navigation h1 {
- 	padding-top: 30px;
- 	padding-left: 300px;
- 	margin-top: 0;
+ 	margin: 0 auto;
     font-family: Roboto;
     font-weight: 500;
     font-style: normal;
@@ -116,6 +113,7 @@ img {
     font-size: 55px;
     line-height: 1;
     text-align: center;
+    padding-top: 56px;
  
  }
  .bascet {
@@ -128,7 +126,8 @@ img {
     line-height: 1.88;
     letter-spacing: normal;
     text-align: right;
-    text-transform: lowercase;
+    text-transform: uppercase;
+    margin-top: 25px;
 
  }
 

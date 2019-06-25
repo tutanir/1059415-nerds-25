@@ -54,6 +54,7 @@ img {
 }
 
 .site-navigation {
+	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
 	width: 440px;
@@ -69,7 +70,7 @@ img {
     list-style: none;
 	background-color: #eeeeee;
     text-transform: uppercase;
-    margin-left: -125px;
+    margin-right: 83px;
     margin-top: 25px;
 
 	}
@@ -113,7 +114,7 @@ img {
     font-size: 55px;
     line-height: 1;
     text-align: center;
-    padding-top: 56px;
+    padding-top: 55px;
  
  }
  .bascet {
@@ -264,20 +265,31 @@ img {
 }
 
 .slider-item h3 {
-  margin-left: 80px;
-  max-width: 374px;
-  margin-bottom: 27px;
-  
-  font-size: 35px;
-  line-height: 50px;
-  font-weight: 500;
+	font-family: Roboto;
+    font-size: 55px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    margin-left: 80px;
+    max-width: 374px;
+    margin-bottom: 27px;
 }
 
 .slider-item p {
-  max-width: 360px;
-  margin-left: 80px;
-  margin-bottom: 38px;
-  font-size: 10px;
+     font-family: Roboto;
+     font-size: 16px;
+     font-weight: normal;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: 1.5;
+     letter-spacing: normal;
+     text-align: left;
+      max-width: 360px;
+      margin-left: 80px;
+      margin-bottom: 38px;
 }
 
 .features-list {
@@ -463,26 +475,20 @@ img {
 
 .pagination-list {
 	list-style: none;
-    width: 280px;
-    padding: 10px;
-
-    white-space: nowrap;
-
+    width: 445px;
+    padding: 0;
+    margin-top: 50px;
     background-color: #ffffff;
 }
 
 .pagination-list li {
 	  display: inline-block;
-      min-width: 20px;
-      height: 43px;
+      min-width: 50px;
       padding: 0 10px;
 
       background-color: #eeeeee;
-      text-align: center;
-      line-height: 40px;
-      vertical-align: middle;
-      font-weight: bold;
-}
+  }
+     
 
  .pagination-list li:hover { 
      background-color: #dfdfdf;
@@ -608,31 +614,49 @@ width: 171px;
 
 .blok-sorting {
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .list {
 	display: flex;
-	margin-left: 240px;
-	margin-top: 15px;
-	margin-bottom: 40px;
+	width: 360px;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
 	list-style: none;
  	 color: #b3b3b3;
 }
 
 .list-item-first {
-	font-size: 11px;
-	padding-right: 27px;
+	font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
 	color: #000000;
+	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 
 .list-item {
-	font-size: 11px;
-	padding-right: 27px;
+  
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  margin-right: 5px;
 }
 
 .list-item-grey {
-	font-size: 11px;
-	padding-right: 27px;
 	opacity: 0.3
 }
 
@@ -656,24 +680,39 @@ width: 171px;
 } 
 
 .sort {
- 	margin-top: 15px;
- 	margin-left: 250px;
+	  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 16px;
+  margin-top: 6px;
+ 	
  }
 
 .price {
-	margin-top: 15px;
-	margin-left: 20px;
+ font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.18px;
+  text-align: left;
+	text-transform: uppercase;
+	margin-top: 7px;
+	margin-left: 2px;
+
 }
 
 .link {
 	display: flex;
 	flex-wrap: wrap;
 
-}
-
-.filters {
-	margin-left: 20px;
-	margin-top: -33px;
 }
 
 .description {
@@ -693,11 +732,11 @@ width: 171px;
 
 .catalog-columns {
 	 display: flex;
-     justify-content: space-between;
-}
 
-.catalog {
-	margin-left: -15px;
+    width: 1160px;
+	margin: 0 auto;
+	padding-top:  15px;
+     justify-content: space-between;
 }
 
 .catalog-list {
@@ -705,15 +744,13 @@ width: 171px;
      flex-wrap: wrap;
      padding: 0;
      margin: 0;
-     margin-bottom: 25px;
-
+     width: 760px;
      list-style: none;
 }
 
 .catalog-item {
 	 position: relative;
 	 width: 360px;
-     margin-bottom: 40px;
      margin-right: 40px;
  }
 
@@ -731,8 +768,16 @@ width: 171px;
  }
 
 .sedona {
-	margin-top: 35px;
-	margin-left: 143px;
+	  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+	margin-top: 25px;
 	color: #000000;
 }
 
@@ -745,9 +790,17 @@ width: 171px;
 }
 
 .info {
-	margin-left: 93px;
-	margin-bottom: 30px;
-	font-size: 14px;
+	font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 35px;
+	
 }
 
 .button-appearing {
@@ -756,8 +809,8 @@ width: 171px;
    	 background-color: #fb565a;
      color: #ffffff;
      border: none;
-     margin-left: 80px;
-     margin-bottom: 43px;
+    margin-left: 80px;
+   margin-bottom: 45px;
      border-radius: 3px;
 }
 
@@ -924,6 +977,18 @@ width: 171px;
 	opacity: 0.3;
 }
 
+.filter-option {
+	  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #283136;
+}
+
 .filter-item {
     margin: 0;
     padding: 0;
@@ -1024,8 +1089,9 @@ width: 171px;
 }
 
 .main-footer {
-	margin-top: 80px;
-	padding: 80px 0;
+	margin-left: 100px;
+	margin-top: 60px;
+
 }
 
 .main-footer .container {
@@ -1033,11 +1099,13 @@ width: 171px;
 	width: 1440px;
 }
 
-.footer-friends {
-	padding-left: 139px;
-	padding-bottom: 76px;
-	padding-right: 356px;
+.flex {
+	display: flex;
+	width: 1160px;
+	margin: 0;
+
 }
+	
 
 .footer-controls {
 	padding-left: 140px;
@@ -1058,8 +1126,9 @@ width: 171px;
 	position: absolute;
 	background-color: #ffffff;
 	width: 319px;
-	top: 60px;
-	left: 80px;
+	height: 308px;
+	top: 55px;
+	left: 140px;
 }
 
 .address-phone {
@@ -1071,19 +1140,46 @@ width: 171px;
 }
 
 .address-headline {
-	font-size: 14px;
-	width: 192px;
-	margin-left: 51px;
+	 font-family: Roboto;
+     font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    text-transform: uppercase;
+	margin-left: 48px;
+	margin-top: 50px;
+}
+
+.address-phone {
+	 font-family: Roboto;
+     font-size: 16px;
+     font-weight: normal;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: 1.13;
+     letter-spacing: normal;
+     text-align: left;
 }
 
  .button-footer {
 	 background-color: #fb565a;
      color: #ffffff;
+     font-family: Roboto;
+     font-size: 16px;
+     font-weight: 500;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: 1.13;
+     letter-spacing: normal;
+     text-align: center;
+     text-transform: uppercase;
 
      width: 219px;
      height: 50px;
      margin-left: 50px;
-     margin-bottom: 47px;
      border: none;
      border-radius: 3px;
 }
@@ -1095,6 +1191,8 @@ width: 171px;
 
 .footer-social {
     display: flex;
+    margin-left: 130px;
+
 }
 
 .social-button {
@@ -1132,28 +1230,30 @@ width: 171px;
 	margin-left: 140px;
 }
 
-.container-footer {
-	display: flex;
-}
-
 .footer-friends {
-	padding-top: 79px;
-	padding-left: 139px;
+	margin-top: 68px;
+	margin-right: 78px;
+	
 	min-width: 545px;
 }
 
 .benefit {
-	  width: 545px;
-  height: 35px;
-  font-family: Roboto;
-  font-size: 36px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
-  
+     width: 545px;
+     height: 35px;
+     font-family: Roboto;
+     font-size: 36px;
+     font-weight: bold;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: 1;
+     letter-spacing: normal;
+     text-align: left;
+     margin: 0;
+  }
+
+.sale {
+	margin-top: 12px;
+
 }
 
 .catalog-item-image svg {

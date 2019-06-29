@@ -473,18 +473,38 @@ img {
   }
 
 .pagination-list {
+	display: flex;
+	justify-content: space-between;
 	list-style: none;
     width: 445px;
     padding: 0;
-    margin-top: 50px;
+   margin-top: 40px;
+  margin-left: -5px;
     background-color: #ffffff;
 }
 
+.pagination-item-1 {
+	text-align: center;
+	margin: 5px;
+	width: 45px;
+
+}
+.pagination-item-2,
+.pagination-item-3 {
+	text-align: center;
+	margin: 5px;
+	width: 50px;
+
+	
+}
+
+.pagination-item-next {
+	margin: 5px;
+	width: 260px;
+    min-height: 50px;
+}
 .pagination-list li {
 	  display: inline-block;
-      min-width: 50px;
-      padding: 0 10px;
-
       background-color: #eeeeee;
   }
      
@@ -498,7 +518,7 @@ img {
      background-color: #d5d5d5;
 }
 
- .pagination-list li:first-child {
+ .pagination-item-1 {
   	 border: solid 3px #dbdbdb;
   	 background-color: #ffffff;
  }

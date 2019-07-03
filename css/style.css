@@ -364,6 +364,9 @@ input[type=radio]:checked + label:before {
 
 }
 
+.filter-option label {
+	margin-bottom: 10px;
+}
 .filter-option {
      font-family: Roboto;
      font-size: 16px;
@@ -374,6 +377,8 @@ input[type=radio]:checked + label:before {
      letter-spacing: normal;
      text-align: left;
      color: #283136;
+     margin: 0;
+     padding: 0;
 
 }
 
@@ -1365,7 +1370,7 @@ input[type=radio]:checked + label:before {
 }
 
 .letter {
-	border: 1px solid;
+	display: none;
 	width: 960px;
 	height: 590px;
 }
@@ -1376,7 +1381,6 @@ input[type=radio]:checked + label:before {
 	margin-right: 100px;
 	margin-top: 73px;
 	margin-bottom: 84px;
-	
 }
 
 .button-letter {
@@ -1388,6 +1392,7 @@ input[type=radio]:checked + label:before {
      border: none;
      text-transform: uppercase;
      border-radius: 3px;
+     margin-top: 47px;
 }
 
 .letter h2 {
@@ -1399,12 +1404,10 @@ input[type=radio]:checked + label:before {
     line-height: 1;
     letter-spacing: normal;
     text-align: left;
-
-	font-size: 33px;
 }
 
 .letter-item input {
-	width: 360px;
+	width: 340px;
 	min-height: 50px;
     border: solid 2px #d7dcde;
 	font: inherit;
@@ -1419,12 +1422,11 @@ input[type=radio]:checked + label:before {
     text-align: left;
     color: rgba(68, 68, 68, 0.5);
     padding-left: 16px;
-
 }
 
 .letter-item-item input {
 	box-sizing: border-box;
-     width: 760px;
+	width: 760px;
      min-height: 118px;
      border: solid 2px #d7dcde;
      opacity: 0.5;
@@ -1438,12 +1440,20 @@ input[type=radio]:checked + label:before {
      text-align: left;
      color: rgba(68, 68, 68, 0.5);
      padding-left: 16px;
+     margin: 0;
 }
- 
+
+ .letter-item {
+ 	display: flex;
+ 	flex-direction: column;
+ }
+
  .letter-info {
  	display: flex;
  	flex-wrap: wrap;
+ 	justify-content: space-between;
  }
+
 .letter-item input:hover {
 	border: solid 2px #b4b9bb;
 }

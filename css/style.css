@@ -301,10 +301,11 @@ input[type=radio] {
 input[type=checkbox] + label:before {
 	content: "";
 	display: inline-block;
+	border: 1px solid #eeeeee;
+	color: transparent;
 	vertical-align: middle;
 	width: 28px;
 	min-height: 28px;
-	color: #eeeeee;
 
 	background-image: url(../img/checkbox-off.svg);
 }
@@ -316,6 +317,7 @@ input[type=checkbox]:checked + label:before {
 input[type=radio] + label:before {
 	content: "";
 	display: inline-block;
+	border: 1px solid #eeeeee;
 	vertical-align: middle;
 	width: 28px;
 	min-height: 28px;

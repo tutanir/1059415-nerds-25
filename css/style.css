@@ -1398,8 +1398,7 @@ input[type=radio]:checked + label:before {
 
 .letter {
 	//*display: none;*//
-	position: relative;
-	display: inline-block;
+	display: block;
 	width: 960px;
 	min-height: 590px;
 	box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -1409,14 +1408,26 @@ input[type=radio]:checked + label:before {
 	width: 21px;
 	min-height: 21px;
 	background-image: url(../img/close-cross.png);
-	left: 850px;
-	top: 10px;
-
-
+	top: 80px;
+	right: 90px;
+	object-fit: contain;
+    opacity: 0.3;
+    border: none;
 }
-.letter-wrapper {
 
-	width: 760px;
+.button-element:hover {
+	  object-fit: contain;
+	  opacity: 1;
+}
+
+.button-element:active {
+    object-fit: contain;
+    opacity: 0.1;
+}
+
+.letter-wrapper {
+	position: relative;
+    width: 760px;
 	padding-left: 100px;
 	padding-right: 100px;
 	padding-top: 73px;

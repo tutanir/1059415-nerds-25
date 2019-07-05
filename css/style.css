@@ -6,13 +6,15 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
+
 	color: #000000;
     background-color: #ffffff;
 }
 
 .main-header { 
-	 background-color: #eeeeee;
-	 min-height: 132px;
+	min-height: 132px;
+
+	background-color: #eeeeee;
 }
 
 .wrapper {
@@ -51,6 +53,7 @@ img {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
+
 	width: 440px;
 	justify-content: space-between;
 	font-family: Roboto;
@@ -64,12 +67,14 @@ img {
     list-style: none;
 	background-color: #eeeeee;
     text-transform: uppercase;
+
     margin-right: 45px;
     margin-top: 25px;
 }
 	
 .site-navigation a {
  	display: block;
+
     vertical-align: middle;
 	color: #000000;
 }
@@ -99,6 +104,7 @@ img {
 
 .headline-navigation h1 {
  	margin: 0 auto;
+ 	padding-top: 55px;
     font-family: Roboto;
     font-weight: 500;
     font-style: normal;
@@ -108,11 +114,11 @@ img {
     font-size: 55px;
     line-height: 1;
     text-align: center;
-    padding-top: 55px;
 }
 
 .bascet {
- 	color: #000000;
+	margin-top: 6px;
+
  	font-family: Roboto;
     font-size: 16px;
     font-weight: 500;
@@ -122,18 +128,20 @@ img {
     letter-spacing: normal;
     text-align: right;
     text-transform: uppercase;
-    margin-top: 6px;
+
+    color: #000000;
 }
 
 .bascet:before {
 	content: "";
 	display: inline-block;
+	margin-right: 25px;
+	margin-top: 3px;
 	width: 15px;
 	min-height: 15px;
 	position: relative;
+
 	background-image: url(../img/basket-icon.png);
-	margin-right: 25px;
-	margin-top: 3px;
 }
 
 .bascet:hover {
@@ -145,8 +153,9 @@ img {
 }
 
 .bascet:active {
-	color: #000000;
 	border-bottom: 2px solid #fb565a;
+
+	color: #000000;
 }
 
 .slider {
@@ -159,6 +168,10 @@ img {
 }
 
 .slider-item p {
+	 margin: 0;
+     padding-top: 28px;
+     margin-bottom: 50px;
+
      font-family: Roboto;
      font-size: 16px;
      font-weight: normal;
@@ -168,14 +181,14 @@ img {
      letter-spacing: normal;
      text-align: left;
      min-width: 360px;
-     margin: 0;
-     padding-top: 28px;
-     margin-bottom: 50px;
 }
 
 .slider-item h3 {
+	margin: 0;
+    padding-top: 55px;
 	width: 380px;
 	margin-top: 50px;
+
 	font-family: Roboto;
     font-size: 55px;
     font-weight: 500;
@@ -184,17 +197,17 @@ img {
     line-height: 1;
     letter-spacing: normal;
     text-align: left;
-    margin: 0;
-    padding-top: 55px;
 }
 
 .slider-item-button {
-	border-radius: 3px;
-	color: #ffffff;
-	background-color: #fb565a;
-	text-transform: uppercase;
 	margin-top: 38px;
 	padding: 15px 55px;
+
+	border-radius: 3px;
+    text-transform: uppercase;
+
+	color: #ffffff;
+	background-color: #fb565a;
 }
 
 .slider-controls {
@@ -230,12 +243,11 @@ img {
     top: 8px;
     left: 8px;
     z-index: 1;
-  
+
     width: 18px;
     height: 18px;
   
     background: #ffffff;
-  
     border-radius: 50%;
 }
 
@@ -291,9 +303,11 @@ img {
     left: 50%;
     top: 50%;
     z-index: 2;
+
     width: 4px;
     height: 4px;
     margin: -4px;
+
     background-color: inherit;
     border: 2px solid #c1c1c1;
     border-radius: 50%;
@@ -311,14 +325,15 @@ input[type=radio] {
 input[type=checkbox] + label:before {
 	content: "";
 	display: inline-block;
+	margin-right: 6px;
+
 	opacity: 0.4;
 	border: 1px solid #eeeeee;
 	vertical-align: middle;
 	width: 28px;
 	min-height: 28px;
-	background-repeat: no-repeat;
-	margin-right: 6px;
 
+	background-repeat: no-repeat;
 	background-image: url(../img/checkbox-off.svg);
 }
 
@@ -329,15 +344,16 @@ input[type=checkbox]:checked + label:before {
 input[type=radio] + label:before {
 	content: "";
 	display: inline-block;
+	margin-right: 6px;
+
 	opacity: 0.4;
 	border: 1px solid #eeeeee;
 	vertical-align: middle;
 	width: 28px;
 	min-height: 28px;
 	border-radius: 50px;
+	
 	background-repeat: no-repeat;
-	margin-right: 6px;
-
 	background-image: url(../img/radio-off.svg);
 }
 
@@ -387,6 +403,7 @@ input[type=radio]:checked + label:before {
      line-height: 1.25;
      letter-spacing: normal;
      text-align: left;
+
      color: #283136;
 }
 
@@ -405,9 +422,10 @@ input[type=radio]:checked + label:before {
     letter-spacing: normal;
     text-align: center;
     text-transform: uppercase;
+    border-radius: 3px;
+
     background-color: #eeeeee;
     color: #000000;
-    border-radius: 3px;
 }
 
 .filter-list {
@@ -428,6 +446,7 @@ input[type=radio]:checked + label:before {
     min-height: 50px;
     background-color: #fb565a;
 	line-height: 18px;
+
 	color: #ffffff;
 }
 
@@ -441,22 +460,20 @@ input[type=radio]:checked + label:before {
 
 .flex {
 	margin: 0 auto;
-
-	display: flex;
+    display: flex;
 	justify-content: space-between;
+
 	width: 1160px;
-	
 	align-items: center;
 }
 
 .flex-presentation {
 	margin: 0 auto;
 	padding: 45px 20px 0;
-
-	display: flex;
+    display: flex;
 	justify-content: space-between;
+
 	width: 1160px;
-	
 	align-items: center;
 	border-bottom: 1px solid #eeeeee;
 }
@@ -476,9 +493,9 @@ input[type=radio]:checked + label:before {
 
 .presentation {
 	margin: 0;
-
-	display: flex;
+    display: flex;
 	flex-direction: column;
+
     min-height: 420px;
  	width: 660px;
 }
@@ -500,17 +517,19 @@ input[type=radio]:checked + label:before {
 
 .presentation-item:before {
     content: "";
+
     position: absolute;
     width: 25px;
     z-index: -1;                 
     top: 10px;
     left: -35px;
+
     border: 1px solid red;
 }
 
 .presentation-headline-h3 {
 	margin: 0;
-    margin-top: 40px
+    margin-top: 40px;
 
     font-size: 16px;
     text-transform: uppercase;
@@ -528,6 +547,7 @@ input[type=radio]:checked + label:before {
     line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
+
     color: #283136;
 }
 
@@ -536,12 +556,12 @@ input[type=radio]:checked + label:before {
 	margin-top: 23px;
 	margin-left: 35px;
 	padding: 0;
-
-	display: flex;
+    display: flex;
 	flex-direction: column;
 
 	min-height: 120px;
 	justify-content: space-between;
+
 	list-style:none;
 }
 
@@ -553,9 +573,9 @@ input[type=radio]:checked + label:before {
 .table-list {
 	margin: 0;
 	padding: 0;
-
-	display: flex;
+    display: flex;
 	flex-wrap: wrap;
+
 	list-style: none;
     min-height: 240px;
 	width: 360px;
@@ -667,17 +687,20 @@ input[type=radio]:checked + label:before {
     line-height: 1.13;
     letter-spacing: normal;
     text-align: left;
-    color: #283136;
     text-transform: capitalize;
+    
+    color: #283136;
 }
 
 .button-red {
 	display: block;
-    background-color: #fb565a;
+    
     width: 160px;
 	max-height: 20px;
 	text-align: center;
 	border-radius: 3px;
+
+	background-color: #fb565a;
 }
 
 .button-red:hover {
@@ -691,11 +714,13 @@ input[type=radio]:checked + label:before {
 
 .button-green {
 	display: block;
-	background-color: #00ca74;
+	
 	width: 160px;
 	max-height: 20px;
 	text-align: center;
 	border-radius: 3px;
+
+	background-color: #00ca74;
 }
 
 .button-green:hover {
@@ -709,11 +734,13 @@ input[type=radio]:checked + label:before {
 
 .button-yellow {
 	display: block;
-	background-color: #efc84a;
+	
 	width: 160px;
 	max-height: 20px;
 	text-align: center;
 	border-radius: 3px;
+
+	background-color: #efc84a;
 }
 
 .button-yellow:hover  {
@@ -738,11 +765,11 @@ input[type=radio]:checked + label:before {
 .friends-logo {
 	margin: 0;
     padding: 2px 10px 0px 28px;
-
-	display: flex;
-	list-style: none;
+    display: flex;
 	justify-content: space-between;
-	align-items: center;
+    align-items: center;
+
+	list-style: none;
 }
 
 .friends-logo-item {
@@ -760,17 +787,18 @@ input[type=radio]:checked + label:before {
 .button[type=button] {
 	width: 260px;
     height: 50px;
-    background-color: #fb565a;
+    border-radius: 3px;
+
+	background-color: #fb565a;
 	color: #ffffff;
-	border-radius: 3px;
 }
 
 .button-submit {
-	color: #000000;
-    width: 260px;
+	width: 260px;
     height: 50px;
     border-radius: 3px;
-
+    
+    color: #000000;
     background-color: #eeeeee;
 }
 
@@ -780,6 +808,7 @@ input[type=radio]:checked + label:before {
 
 .button-submit:active {
      box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+
      background-color: #d5d5d5;
 }
 
@@ -787,9 +816,9 @@ input[type=radio]:checked + label:before {
 	padding: 0;
     margin-top: 40px;
     margin-left: -5px;
-
-	display: flex;
+    display: flex;
 	justify-content: space-between;
+
 	list-style: none;
     width: 445px;
     
@@ -798,10 +827,10 @@ input[type=radio]:checked + label:before {
 
 .pagination-item-1 {
 	margin: 5px;
-
-	display:flex; 
+    display:flex; 
     justify-content: center;
     align-items: center;
+
 	width: 45px;
 
 	background-color: #eeeeee;
@@ -810,10 +839,10 @@ input[type=radio]:checked + label:before {
 .pagination-item-2,
 .pagination-item-3 {
 	margin: 5px;
-
-	display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+
 	width: 50px;
 
 	background-color: #eeeeee;
@@ -821,10 +850,10 @@ input[type=radio]:checked + label:before {
 
 .pagination-item-next {
 	margin: 5px;
-
-	display: flex;
+    display: flex;
 	justify-content: center;
     align-items: center;
+
     width: 260px;
     min-height: 50px;
     text-transform: uppercase;
@@ -851,10 +880,10 @@ input[type=radio]:checked + label:before {
 .scroll-list {
 	margin: 0;
 	padding: 0 auto;
+    display: flex;
+    justify-content: space-between;
 
-	display: flex;
 	width: 1100px;
-	justify-content: space-between;
 	
     list-style: none;
 }
@@ -887,19 +916,18 @@ input[type=radio]:checked + label:before {
 }
 
 .scroll-item .button {
-	 padding: 15px 0;
+	padding: 15px 0;
 
-	 width: 160px;
-	 height: 50px;
-	 text-transform: uppercase;
-	 color: #ffffff;
+    width: 160px;
+    height: 50px;
+	text-transform: uppercase;
+	color: #ffffff;
 }
 
 .scroll-list {
 	display: flex;
 	justify-content: space-between;
-
-	margin: 0;
+    margin: 0;
 	padding: 0;
 }
 
@@ -1467,8 +1495,7 @@ input[type=radio]:checked + label:before {
 }
 
 .letter {
-	display: block;
-	visibility: hidden;
+	display: none;
 	width: 960px;
 	min-height: 590px;
 	box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);

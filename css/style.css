@@ -34,11 +34,16 @@ img {
 }
 
 .visually-hidden {
-     position: absolute;
-     width: 1px;
-     height: 1px;
-     margin: -1px;
-     clip: rect(0 0 0 0);
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .main-header-logo:hover {
@@ -69,7 +74,7 @@ img {
     text-transform: uppercase;
 
     margin-right: 45px;
-    margin-top: 25px;
+    margin-top: 28px;
 }
 	
 .site-navigation a {
@@ -84,7 +89,8 @@ img {
 }
 
 .site-navigation a:focus {
-     color: #b3b3b3;
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 0.3;
 }
 
 .site-navigation a:active {
@@ -98,13 +104,13 @@ img {
 }
 
 .headline-navigation {
-    height: 220px;
+    height: 225px;
   	background-color: #eeeeee;
 }
 
 .headline-navigation h1 {
  	margin: 0 auto;
- 	padding-top: 55px;
+ 	padding-top: 60px;
     font-family: Roboto;
     font-weight: 500;
     font-style: normal;
@@ -116,7 +122,7 @@ img {
     text-align: center;
 }
 
-.bascet {
+.basket {
 	margin-top: 6px;
 
  	font-family: Roboto;
@@ -132,11 +138,11 @@ img {
     color: #000000;
 }
 
-.bascet:before {
+.basket:before {
 	content: "";
 	display: inline-block;
 	margin-right: 25px;
-	margin-top: 3px;
+	vertical-align: middle;
 	width: 15px;
 	min-height: 15px;
 	position: relative;
@@ -144,15 +150,15 @@ img {
 	background-image: url(../img/basket-icon.png);
 }
 
-.bascet:hover {
+.basket:hover {
     color: #fb565a;
 }
 
-.bascet:focus {
+.basket:focus {
 	color: #b3b3b3;
 }
 
-.bascet:active {
+.basket:active {
 	border-bottom: 2px solid #fb565a;
 
 	color: #000000;
@@ -187,7 +193,6 @@ img {
 	margin: 0;
     padding-top: 55px;
 	width: 380px;
-	margin-top: 50px;
 
 	font-family: Roboto;
     font-size: 55px;
@@ -208,6 +213,15 @@ img {
 
 	color: #ffffff;
 	background-color: #fb565a;
+}
+
+.slider-item-button:hover {
+	background-color: #e74246;
+}
+
+.slider-item-button:active {
+     box-shadow: inset 0px 3px 0 0 var(--dark-forest-green-10);
+     background-color: #d7373b;
 }
 
 .slider-controls {
@@ -231,6 +245,7 @@ img {
     width: 18px;
     height: 18px;
     padding: 8px;
+    vertical-align: bottom;
   
     border-radius: 50%;
     cursor: pointer;
@@ -328,7 +343,6 @@ input[type=checkbox] + label:before {
 	margin-right: 6px;
 
 	opacity: 0.4;
-	border: 1px solid #eeeeee;
 	vertical-align: middle;
 	width: 28px;
 	min-height: 28px;
@@ -347,7 +361,6 @@ input[type=radio] + label:before {
 	margin-right: 6px;
 
 	opacity: 0.4;
-	border: 1px solid #eeeeee;
 	vertical-align: middle;
 	width: 28px;
 	min-height: 28px;
@@ -364,7 +377,7 @@ input[type=radio]:checked + label:before {
 .filter-grid {
 	margin: 0;
     margin-bottom: 10px;
-    margin-top: 60px;
+    margin-top: 58px;
 
 	font-family: Roboto;
     font-size: 18px;
@@ -393,7 +406,7 @@ input[type=radio]:checked + label:before {
 
 .filter-option {
 	 margin: 0;
-     margin-top: 10px;
+     margin-top: 12px;
 
      font-family: Roboto;
      font-size: 16px;
@@ -407,8 +420,16 @@ input[type=radio]:checked + label:before {
      color: #283136;
 }
 
+.filter-option:hover {
+	color: #283136;
+}
+.filter-option:active {
+	 color: rgba(40, 49, 54, 0.3);
+	 opacity: 0.3;
+}
 .button-submit-grey {
 	padding: 0;
+	margin: 0;
     margin-top: 45px;
 
     width: 260px;
@@ -423,9 +444,19 @@ input[type=radio]:checked + label:before {
     text-align: center;
     text-transform: uppercase;
     border-radius: 3px;
+    border: 0;
 
     background-color: #eeeeee;
     color: #000000;
+}
+
+.button-submit-grey:hover {
+	 background-color: #dfdfdf;
+}
+
+.button-submit-grey:active {
+    box-shadow: inset 0px 3px 0 0 var(--dark-forest-green-10);
+    background-color: #d5d5d5;
 }
 
 .filter-list {
@@ -582,14 +613,13 @@ input[type=radio]:checked + label:before {
 	align-content: space-around;
 }
 	
-
 .table-list-item {
 	width: 93px;
 }
 
 .table-list-item-1 {
 	margin-left: 15px;
-    margin-top: 5px;
+    margin-top: 20px;
 
     font-family: Roboto;
     font-size: 16px;
@@ -603,49 +633,49 @@ input[type=radio]:checked + label:before {
 
 .table-list-item:nth-child(2) {
 	 margin: 0;
-     margin-top: 20px;
+	 margin-top: 18px;
 
      font-family: Roboto;
      font-size: 45px;
      font-weight: bold;
      font-style: normal;
      font-stretch: normal;
-     line-height: 0.22;
+     line-height: 1.5;
      letter-spacing: normal;
      text-align: left;
 }
 
 .table-list-item:nth-child(3) {
 	margin-left: 24px;
-    margin-top: 20px;
+	margin-top: 18px;
 
     font-family: Roboto;
     font-size: 45px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    line-height: 0.22;
+    line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
 }
 
 .table-list-item:nth-child(4) {
 	margin-left: 30px;
-    margin-top: 20px;
+	margin-top: 18px;
 
     font-family: Roboto;
     font-size: 45px;
     font-weight: bold;
     font-style: normal;
     font-stretch: normal;
-    line-height: 0.22;
+    line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
 }
 
 .table-list-item:nth-child(5) { 
 	margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 
     font-family: Roboto;
     font-size: 16px;
@@ -661,7 +691,7 @@ input[type=radio]:checked + label:before {
 
 .table-list-item:nth-child(6) {
     margin-left: 25px;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 
     font-family: Roboto;
     font-size: 16px;
@@ -677,7 +707,7 @@ input[type=radio]:checked + label:before {
 
 .table-list-item:nth-child(7) {
     margin-left: 27px;
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 
     font-family: Roboto;
     font-size: 16px;
@@ -820,7 +850,7 @@ input[type=radio]:checked + label:before {
 	justify-content: space-between;
 
 	list-style: none;
-    width: 445px;
+    width: 452px;
     
     background-color: #ffffff;
 }
@@ -842,8 +872,7 @@ input[type=radio]:checked + label:before {
     display: flex;
     justify-content: center;
     align-items: center;
-
-	width: 50px;
+    width: 50px;
 
 	background-color: #eeeeee;
 }
@@ -875,6 +904,18 @@ input[type=radio]:checked + label:before {
   	 border: solid 3px #dbdbdb;
 
   	 background-color: #ffffff;
+}
+
+ .pagination-list a {
+     font-family: Roboto;
+     font-size: 16px;
+     font-weight: 500;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: 1.13;
+     letter-spacing: normal;
+     text-align: center;
+     color: #000000;
 }
 
 .scroll-list {
@@ -960,7 +1001,7 @@ input[type=radio]:checked + label:before {
 .list {
 	padding: 0;
 	margin: 0;
-	margin-bottom: 7px;
+	margin-bottom: 12px;
 
     display: flex;
 	width: 360px;
@@ -981,8 +1022,6 @@ input[type=radio]:checked + label:before {
     letter-spacing: normal;
     text-align: left;
 	text-transform: uppercase;
-
-	color: #000000;
 }
 
 .list-item {
@@ -1007,6 +1046,18 @@ input[type=radio]:checked + label:before {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.list-item-first a {
+     font-family: Roboto;
+     font-size: 14px;
+     font-weight: normal;
+     font-style: normal;
+     font-stretch: normal;
+     line-height: 1.29;
+     letter-spacing: normal;
+     text-align: left;
+     color: #000000;
+}
+
 .list-item a:hover,
 .list-item-first a:hover {
 	color: rgba(0, 0, 0, 0.6);
@@ -1024,7 +1075,7 @@ input[type=radio]:checked + label:before {
 
 .sort {
 	padding-left: 16px;
-    margin-top: 6px;
+    margin-top: 3px;
 
     font-family: Roboto;
     font-size: 18px;
@@ -1116,7 +1167,7 @@ input[type=radio]:checked + label:before {
 }
 
 .sedona {
-	margin-top: 25px;
+	margin-top: 30px;
 
     font-family: Roboto;
     font-size: 18px;
@@ -1140,7 +1191,8 @@ input[type=radio]:checked + label:before {
 }
 
 .info {
-	margin-bottom: 35px;
+	margin-bottom: 25px;
+	padding-left: 80px;
 
 	font-family: Roboto;
     font-size: 16px;
@@ -1150,6 +1202,7 @@ input[type=radio]:checked + label:before {
     line-height: 1.13;
     letter-spacing: normal;
     text-align: center;
+    width: 200px;
 
     color: #666666;
 }
@@ -1215,6 +1268,10 @@ input[type=radio]:checked + label:before {
     font-weight: 700;
 }
 
+.bar {
+	margin-left: 20%; 
+	width: 30%
+}
 .range-controls {
      position: relative;
      margin-bottom: 15px;
@@ -1271,6 +1328,7 @@ input[type=radio]:checked + label:before {
 
 .price-controls label {
      display: inline-block;
+     vertical-align: middle;
      width: 50%;
   
      font-size: 16px;
@@ -1382,27 +1440,27 @@ input[type=radio]:checked + label:before {
 	margin: 0 0 0 51px;
 }
 
- .button-footer {
-     margin:32px 0 0 50px;
-     padding: 0;
+.button-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:50px;
+    margin-top: 35px;
+    padding: 0;
 	
-     font-family: Roboto;
-     font-size: 16px;
-     font-weight: 500;
-     font-style: normal;
-     font-stretch: normal;
-     line-height: 1.13;
-     letter-spacing: normal;
-     text-align: center;
-     text-transform: uppercase;
-     width: 219px;
-     height: 50px;
-     
-     border: none;
-     border-radius: 3px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3px;
 
-     background-color: #fb565a;
-     color: #ffffff;
+    background-color: #fb565a;
+    color: #ffffff;
  }
 
 .address a {
@@ -1495,7 +1553,7 @@ input[type=radio]:checked + label:before {
 }
 
 .letter {
-	display: none;
+	display: blok;
 	width: 960px;
 	min-height: 590px;
 	box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
@@ -1567,6 +1625,7 @@ input[type=radio]:checked + label:before {
     border: solid 2px #d7dcde;
 	font: inherit;
     opacity: 0.5;
+
 }
 
 .letter-item-item input {
@@ -1607,4 +1666,44 @@ input[type=radio]:checked + label:before {
 
 .letter-item input:focus {
 	border: solid 2px #000000;
+}
+
+.letter-item placeholder {
+    opacity: 0.5;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(68, 68, 68, 0.5);
+}
+
+.letter-item-item placeholder {
+    opacity: 0.5;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(68, 68, 68, 0.5);
+}
+
+.letter-item input#letter-name {
+	opacity: 0.5;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(68, 68, 68, 0.5);
+
 }
